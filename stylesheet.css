@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  background-color: #26a6f5;
+  width: 100%;
+  height: 65px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+}
+#header-left {
+  margin-left: 20px;
+  letter-spacing: 2.5px;
+}
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-links li {
+  list-style: none;
+}
+.navbar-links li a {
+  display: block;
+  padding: 0px 20px 0px 10px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.navbar-links li:hover {
+  background-color: #2a5298;
+}
+.toggle-button {
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .menu-icon {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border: 10px;
+}
+header {
+  display: inline;
+}
+main {
+  position: static;
+  text-align: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+#content {
+  float: left;
+  overflow: auto;
+  width: 70%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.photos {
+  width: 600px;
+  height: 425px;
+  margin: 25px auto;
+  box-shadow: 10px 10px 8px #888888;
+  background-image: url(img/bmw.jpg);
+  animation: slider 25s infinite linear;
+}
+.photos:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+@keyframes slider {
+  0% {
+    background-image: url(img/bmw.jpg);
+  }
+  20% {
+    background-image: url(img/mazda.jpg);
+  }
+  40% {
+    background-image: url(img/mini.jpg);
+  }
+  60% {
+    background-image: url(img/mercedes.jpg);
+  }
+  80% {
+    background-image: url(img/tesla.jpg);
+  }
+  100% {
+    background-image: url(img/mitsubishi.jpg);
+  }
+}
+.division a {
+  display: inline-block;
+}
+
+.car-videos iframe {
+  width: 420px;
+  height: 315px;
+}
+aside {
+  float: right;
+  width: 30%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+img.photo-doohan {
+  border-radius: 100px;
+}
+table {
+  text-align: center;
+  margin: 0px auto;
+}
+th,
+tr,
+td {
+  letter-spacing: 1px;
+  padding: 5px;
+}
+footer {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
